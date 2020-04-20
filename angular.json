@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "JonoSite"
+  "defaultProject": "JonoSite",
+  "cli": {
+    "analytics": false
+  }
 }
