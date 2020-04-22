@@ -7,7 +7,7 @@ module.exports = {
             'tsConfig': 'src/tsconfig.spec.json',
         }
     },
-
+    roots: ["<rootDir>/src/"],
     transformIgnorePatterns: [`<rootDir>/node_modules/(?!${esModules})`],
     testPathIgnorePatterns: [
         '<rootDir>/dist',
