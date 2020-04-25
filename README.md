@@ -1,4 +1,5 @@
-# AsPortfolio
+# JonoSite
+This is a basic Angular 9 project to showcase the publications of Jono Young. A young aspiring author.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.1.
 
