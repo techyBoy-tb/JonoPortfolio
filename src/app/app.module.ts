@@ -10,9 +10,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormMainComponent } from './components/form-main/form-main.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
-import { NewsComponent } from './components/news/news.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +20,12 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     HeaderComponent,
     FormMainComponent,
     ErrorPageComponent,
-    NewsComponent,
+    BlogComponent,
     AboutMeComponent,
     ContactMeComponent,
   ],
   imports: [
+    RoutingModule,
     BrowserModule,
     RoutingModule,
     NavbarModule,

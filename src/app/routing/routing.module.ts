@@ -4,7 +4,7 @@ import { ErrorPageComponent } from '../components/error-page/error-page.componen
 import { FormMainComponent } from '../components/form-main/form-main.component';
 import { AboutMeComponent } from '../components/about-me/about-me.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
-import { NewsComponent } from '../components/news/news.component';
+import { BlogComponent } from '../components/blog/blog.component';
 
 export const routes: Routes = [
   {
@@ -20,7 +20,7 @@ export const routes: Routes = [
     path: 'contact-me', component: ContactMeComponent
   },
   {
-    path: 'news', component: NewsComponent
+    path: 'blog', component: BlogComponent
   },
   {
     path: '', component: FormMainComponent
