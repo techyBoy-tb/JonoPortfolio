@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #eee;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  // width: 10px;
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // background: #F45D0140;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: #F45D0180;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  // background: #F45D01;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 16px;
+}
