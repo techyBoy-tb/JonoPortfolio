@@ -1,12 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-// For MDB Angular Free
-import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
-
-import { RoutingModule } from './routing/routing.module';
 import { AppComponent } from './app.component';
+import { RoutingModule } from './routing/routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FormMainComponent } from './components/form-main/form-main.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
@@ -14,16 +10,9 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { BlogComponent } from './components/blog/blog.component';
 
-import { MatMenuModule } from '@angular/material/menu';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomAngularMaterialModule } from './components/shared/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -39,22 +28,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RoutingModule,
     BrowserModule,
     RoutingModule,
-    NavbarModule,
-    WavesModule,
-    ButtonsModule,
     BrowserAnimationsModule,
-    MatMenuModule,
-    MatCardModule,
-    MatButtonModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
     FlexLayoutModule,
-    MDBBootstrapModule.forRoot(),
+    CustomAngularMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
