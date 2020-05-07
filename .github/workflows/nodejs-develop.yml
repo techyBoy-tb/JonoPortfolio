@@ -22,9 +22,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: npm config set cache '/tmp/slavescache/_cacache'
     - run: npm install
     - run: npm run lint
     - run: npm run test
-    - run: npm run build
+    - run: npm run build --prod --output-hashing=all --base-href=/home/
       env:
         CI: true
