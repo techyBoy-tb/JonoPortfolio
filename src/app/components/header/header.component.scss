@@ -1,16 +1,72 @@
-.title {
-    font-size: xxx-large;
-    // margin: 0 0 10% 100%;
-}
-.navbar-nav {
-    text-align: center;
-    // margin-left: 100%;
-}
-
-.container {
+.nav {
+    padding: 8px 16px;
+    display: block;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #474647;
     text-align: center;
 }
 
-.navbar-expand .mr-auto {
+.logo {
+    font-family: 'Jaldi', sans-serif;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #212529;
+    margin: 16px 0 16px 0px;
     display: inline-block;
+}
+button:active {
+    text-decoration: underline;
+}
+
+.menu-button {
+    font-size: 14pt;
+    font-weight: 300;
+    margin-left: 4px;
+}
+
+/* --- Mobile view --- */
+.toggleMenu {
+    display: none; 
+}
+
+.spacer {
+    display: none;
+}
+
+.mat-toolbar-single-row {
+    height: 100%;
+}
+
+span {
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex: 1;
+        flex-flow: row-reverse;
+    }
+
+    .toggleMenu {
+        display: block;
+        float: left;
+    }
+
+    .spacer {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .logo {
+        align-self: flex-end;
+        text-align: left;
+        font-size: 28px;
+        margin: 0;
+    }
 }
