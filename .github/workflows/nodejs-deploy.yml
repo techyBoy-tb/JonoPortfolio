@@ -15,8 +15,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm config set cache '/tmp/slavescache/_cacache'
-      - run: npm install
-      - run: npm run build
+      - run: 
+        npm install
+        npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
