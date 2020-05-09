@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --base-href=/home/",
-    "build": "npm run build --prod --output-hashing=all --base-href=/home/",
+    "build": "ng build --prod --output-hashing=all --base-href=/home/",
     "test": "ng test",
     "lint": "ng lint",
     "preinstall": "npx npm-force-resolutions",
