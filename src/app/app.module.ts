@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
 import { BooksComponent } from './components/books/books.component';
 import { ExerptComponent } from './components/exerpt/exerpt.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ExerptComponent } from './components/exerpt/exerpt.component';
     ContactMeComponent,
     BooksComponent,
     ExerptComponent,
+    SocialComponent,
   ],
   imports: [
     RoutingModule,

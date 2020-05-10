@@ -7,6 +7,7 @@ import { ContactMeComponent } from '../components/contact-me/contact-me.componen
 import { BlogComponent } from '../components/blog/blog.component';
 import { ExerptComponent } from '../components/exerpt/exerpt.component';
 import { BooksComponent } from '../components/books/books.component';
+import { SocialComponent } from '../components/social/social.component';
 
 export const routes: Routes = [
   {
@@ -16,10 +17,10 @@ export const routes: Routes = [
     path: '', component: FormMainComponent
   },
   {
-    path: 'about-me', component: AboutMeComponent
+    path: 'about', component: AboutMeComponent
   },
   {
-    path: 'contact-me', component: ContactMeComponent
+    path: 'contact', component: ContactMeComponent
   },
   {
     path: 'blog', component: BlogComponent
@@ -29,6 +30,9 @@ export const routes: Routes = [
   },
   {
     path: 'books', component: BooksComponent
+  },
+  {
+    path: 'social', component: SocialComponent
   }
 ];
 

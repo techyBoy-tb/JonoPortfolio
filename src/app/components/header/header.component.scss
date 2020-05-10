@@ -42,7 +42,12 @@
 span {
     white-space: pre-wrap;
 }
-
+.active {
+    text-decoration: underline;
+}
+* :focus {
+    outline: none !important;
+}
 @media screen and (max-width: 630px) {
     .nav {
         flex: 1;
