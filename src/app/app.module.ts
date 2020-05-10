@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/cor
 
 import { AppComponent } from './app.component';
 import { RoutingModule } from './routing/routing.module';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/layout/header/header.component';
 import { FormMainComponent } from './components/form-main/form-main.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
@@ -16,6 +16,7 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
 import { BooksComponent } from './components/books/books.component';
 import { ExerptComponent } from './components/exerpt/exerpt.component';
 import { SocialComponent } from './components/social/social.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SocialComponent } from './components/social/social.component';
     BooksComponent,
     ExerptComponent,
     SocialComponent,
+    FooterComponent,
   ],
   imports: [
     RoutingModule,

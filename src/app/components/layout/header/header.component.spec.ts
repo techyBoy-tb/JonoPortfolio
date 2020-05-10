@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { CustomAngularMaterialModule } from '../../shared/angular-material.module';
+import { CustomAngularMaterialModule } from '../../../shared/angular-material.module';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('HeaderComponent', () => {
