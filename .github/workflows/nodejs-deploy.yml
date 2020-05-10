@@ -22,10 +22,10 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          run: |
-           ngh --message="Deploying to PRE"
-           ngh —branch=master
-           ngh --dry-run
-           ngh
+        # uses: JamesIves/github-pages-deploy-action@releases/v3
+        # with:
+        run: |
+          ngh --message="Deploying to PRE"
+          ngh —branch=master
+          ngh --dry-run
+          ngh
