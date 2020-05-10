@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --base-href=/home/",
-    "build": "ng build",
+    "start": "ng serve --base-href=/",
+    "build": "ng build --prod --output-hashing=all --base-href=/",
     "test": "ng test",
     "lint": "ng lint",
     "preinstall": "npx npm-force-resolutions",
@@ -67,6 +67,7 @@
     "typescript": "^3.7.5"
   },
   "resolutions": {
-    "minimist": "1.2.3"
+    "minimist": "1.2.3",
+    "yargs-parser": "18.1.3"
   }
 }
