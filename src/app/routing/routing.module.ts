@@ -5,6 +5,9 @@ import { FormMainComponent } from '../components/form-main/form-main.component';
 import { AboutMeComponent } from '../components/about-me/about-me.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
 import { BlogComponent } from '../components/blog/blog.component';
+import { ExerptComponent } from '../components/exerpt/exerpt.component';
+import { BooksComponent } from '../components/books/books.component';
+import { SocialComponent } from '../components/social/social.component';
 
 export const routes: Routes = [
   {
@@ -14,16 +17,22 @@ export const routes: Routes = [
     path: '', component: FormMainComponent
   },
   {
-    path: 'about-me', component: AboutMeComponent
+    path: 'about', component: AboutMeComponent
   },
   {
-    path: 'contact-me', component: ContactMeComponent
+    path: 'contact', component: ContactMeComponent
   },
   {
     path: 'blog', component: BlogComponent
   },
   {
-    path: '', component: FormMainComponent
+    path: 'exerpt', component: ExerptComponent
+  },
+  {
+    path: 'books', component: BooksComponent
+  },
+  {
+    path: 'social', component: SocialComponent
   }
 ];
 
