@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { CustomAngularMaterialModule } from './components/shared/angular-material.module';
+import { CustomAngularMaterialModule } from './shared/angular-material.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {

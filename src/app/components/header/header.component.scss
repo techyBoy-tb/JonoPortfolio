@@ -19,9 +19,6 @@
 .logo2 {
     margin-left: 2px;
 }
-button:active {
-    text-decoration: underline;
-}
 
 .menu-button {
     font-size: 14pt;
@@ -46,7 +43,7 @@ span {
     white-space: pre-wrap;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     .nav {
         flex: 1;
         flex-flow: row-reverse;
@@ -70,7 +67,7 @@ span {
     a {
         vertical-align: text-top;
     }
-    
+
     .logo {
         align-self: flex-end;
         text-align: left;
@@ -83,7 +80,7 @@ span {
     }
 
     .mat-toolbar-single-row {
-        height: 9%;
+        height: 60px;
     }
     .navBtns {
         display: none;

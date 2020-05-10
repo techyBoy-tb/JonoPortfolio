@@ -12,7 +12,9 @@ import { BlogComponent } from './components/blog/blog.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CustomAngularMaterialModule } from './components/shared/angular-material.module';
+import { CustomAngularMaterialModule } from './shared/angular-material.module';
+import { BooksComponent } from './components/books/books.component';
+import { ExerptComponent } from './components/exerpt/exerpt.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { CustomAngularMaterialModule } from './components/shared/angular-materia
     BlogComponent,
     AboutMeComponent,
     ContactMeComponent,
+    BooksComponent,
+    ExerptComponent,
   ],
   imports: [
     RoutingModule,
