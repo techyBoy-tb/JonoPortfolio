@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FooterComponent } from './footer.component';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
@@ -8,6 +9,7 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ CustomAngularMaterialModule ],
       declarations: [ FooterComponent ]
     })
     .compileComponents();
@@ -19,7 +21,7 @@ describe('FooterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });
