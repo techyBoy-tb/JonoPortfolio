@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-error-page',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorPageComponent implements OnInit {
 
+  private router: RouterLink;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  button() {
+    console.log('thing', );
   }
 
 }
