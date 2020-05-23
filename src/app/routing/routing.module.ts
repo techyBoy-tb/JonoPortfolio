@@ -33,6 +33,9 @@ export const routes: Routes = [
   },
   {
     path: 'social', component: SocialComponent
+  },
+  {
+    path: '**', component: FormMainComponent
   }
 ];
 

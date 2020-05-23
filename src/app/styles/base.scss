@@ -1,0 +1,155 @@
+.select-wrapper {
+    width: 100%;
+
+    select {
+        max-width: 100% !important;
+    }
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: underline;
+    color: $red;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.body-title {
+    font: 16px $jaldi;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.body-error {
+    font: 16px $jaldi;
+    line-height: 16px;
+}
+
+.main-title {
+    margin: 32px 0;
+    text-align: center;
+
+    span {
+        font: 36px $open-sans;
+        font-weight: bold;
+
+        .red {
+            color: $red;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    font: 36px $jaldi;
+}
+
+h2 {
+    font: 32px $jaldi;
+}
+
+h3 {
+    font: 28px $jaldi;
+}
+
+h4 {
+    font: 24px $jaldi;
+}
+
+h5 {
+    font: 18px $jaldi;
+}
+
+.noCross::-ms-clear{
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .txt::before {
+        margin-top: -10px;
+    }
+
+    div.form-box {
+        padding: 16px 16px 16px 24px;
+    }
+
+    .form-item.standard {
+        input,
+        select,
+        .select-wrapper,
+        textarea {
+            max-width: 36%;
+        }
+    }
+
+    .form-item.small {
+        input,
+        select,
+        .select-wrapper,
+        textarea {
+            max-width: 20%;
+        }
+    }
+
+    .form-item.option .title-selection .select-wrapper {
+        max-width: 94%;
+    }
+}
+
+.divider {
+    margin: 8px 0 0 0;
+}
+
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// body {
+//   margin: 0;
+//   font-family: 'Nunito', sans-serif;
+// }
+
+// /* Scrollbar */
+// /* width */
+// ::-webkit-scrollbar {
+//   // width: 10px;
+//   width: 0px;
+// }
+
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   // background: #F45D0140;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   // background: #F45D0180;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   // background: #F45D01;
+// }
+
+// .container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+//   margin-top: 16px;
+// }
