@@ -7,6 +7,7 @@
 
 # dependencies
 /node_modules
+/nodejs-email/node_modules
 
 # IDEs and editors
 /.idea
