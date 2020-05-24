@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BooksComponent implements OnInit {
 
   constructor() { }
+  
+  panelOpenState = false;
 
   ngOnInit(): void {
   }

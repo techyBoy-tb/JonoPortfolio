@@ -1,0 +1,40 @@
+
+.weaver {
+    text-align: center;
+    width: 300px;
+    margin-left: 13%;
+}
+
+.weaver-title {
+    text-align: center;
+}
+
+.card {
+    flex: auto;
+    height: auto;
+    border-radius: 4px;
+}
+
+img {
+    // width: 300px;
+    box-shadow: -8px -8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: -8px -8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: -8px -8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.describe {
+    margin: 24px 48px 24px 48px;
+}
+
+.container {
+    max-width: none;
+}
+
+@media (max-width: 650px) {
+    .card {
+        width: 85%;
+    }
+    img {
+        width: 75%;
+    }
+}
