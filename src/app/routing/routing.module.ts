@@ -19,7 +19,7 @@ export const routes: Routes = [
     path: 'about', component: AboutMeComponent
   },
   {
-    path: 'contact', component: ContactMeComponent
+    path: 'contact-me', component: ContactMeComponent
   },
   {
     path: 'blog', component: BlogComponent

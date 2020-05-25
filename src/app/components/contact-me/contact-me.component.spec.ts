@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContactMeComponent } from './contact-me.component';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { MyErrorStateMatcher } from 'src/app/utils/MyErrorStateMatcher';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ContactMeComponent', () => {
   let component: ContactMeComponent;
@@ -8,7 +12,8 @@ describe('ContactMeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactMeComponent ]
+      declarations: [ ContactMeComponent ],
+      imports: [ CustomAngularMaterialModule, BrowserAnimationsModule  ]
     })
     .compileComponents();
   }));
