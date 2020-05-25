@@ -6,64 +6,15 @@ img {
     filter: grayscale(100%);
     width: 100%;
 }
-
-.mat-card {
-    box-shadow: none;
-    font-family: $jaldi;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-}
-
 .jono {
     text-align: center;
     width: 400px !important;
 }
-.card {
-    flex: auto;
-    width: 250px;
-    height: 300px;
-    border-radius: 4px;
-    margin: 24px 4px 24px 16px;
-}
-
-.card-header {
-    text-align: center;
-    height: 50px;
-    background-color: #47464725;
-    margin: 4px;
-}
-
-.card-text {
-    margin-bottom: 24px;
-    font-size: 15px;
-}
-
-.card-body {
-    width: fit-content;
-    margin: 24px 16px 24px 16px;
-}
   
-@media screen and (max-width: 630px) {
-    .container {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
-
-    .card {
-        margin: 8px 24px 16px 24px;
-        transition: none;
-    }
+@media screen and (max-width: 650px) {
     .jono {
         text-align: center;
         width: 250px !important;
         height: auto;
-        }
-
-    .card-body{
-        height: max-content;
     }
 }

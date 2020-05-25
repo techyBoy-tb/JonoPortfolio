@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+img {
+    width: 40px;
+}
+
+
+
+// Skip to content
+// Search or jump to…
+
+// Pull requests
+// Issues
+// Marketplace
+// Explore
+ 
+ 
+// .container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+// }
+
+// .card {
+//   flex: auto;
+//   max-width: 320px;
+//   height: 350px;
+//   border-radius: 4px;
+//   margin: 24px 4px 24px 4px;
+//   transition: ease-out 0.6s;
+//   box-shadow: 0px 0px 3px 3px $red !important
+// }
+
+// .card-header {
+//   text-align: center;
+//   height: 50px;
+//   background-color: #47464725;
+//   border-radius: 4px;
+//   margin: 4px;
+// }
+
+// .card-img {
+//   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+//   background-size: cover;
+// }
+
+// .card-text {
+//   margin-bottom: 24px;
+// }
+
+// .mat-card-actions {
+//   position: absolute;
+//   bottom: 24px;
+//   right: 24px;
+// }
+
+// .mat-raised-button {
+//   background-color: #F45D01;
+//   color: #eee;
+//   font-weight: 300;
+// }
+
+// /* ON MOUSEOVER */
+// .card:hover {
+//   max-width: 330px;
+//   height: 355px;
+//   margin: 8px 4px 0px 4px;
+//   box-shadow: 0px 0px 3px 3px #EECD0250 !important;
+// }
+
+// /* i WANT THIS TO APPLY WHEN CARD IS HOVERED, NOT THE BUTTON ITSELF */
+// .mat-card-actions:hover {
+//   transform: scale(1.1);
+// }
+
+// @media (max-width:756px) {
+//   .card {
+//     max-width: max-content;
+//     margin: 8px 24px 16px 24px;
+//     transition: none;
+//   }
+  
+//   .card:hover {
+//     max-width: inherit;
+//     max-height: 350px;
+//     margin: 8px 24px 16px 24px;
+//   }
+// }

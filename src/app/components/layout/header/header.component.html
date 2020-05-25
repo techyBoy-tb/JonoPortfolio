@@ -5,8 +5,8 @@
       <mat-icon>menu</mat-icon>
     </button>
       <mat-menu #shortMenu="matMenu" yPosition="below">
-        <button id="booksBtnSmall" mat-menu-item routerLink="/books" routerLinkActive="active">Books</button>
         <button id="bioBtnSmall" mat-menu-item routerLink="/about-me" routerLinkActive="active">Bio</button>
+        <button id="booksBtnSmall" mat-menu-item routerLink="/books" routerLinkActive="active">Books</button>
         <button id="exerptBtnSmall" mat-menu-item routerLink="/exerpt" routerLinkActive="active">Exerpt</button>
         <button id="blogBtnSmall" mat-menu-item routerLink="/blog" routerLinkActive="active">Blog</button>
         <button id="socialBtnSmall" mat-menu-item routerLink="/social" routerLinkActive="active">Social</button>
@@ -14,21 +14,14 @@
       </mat-menu>
   </div> 
   <div class="spacer"></div>
-  <a routerLink="/" id="homeLogo"><span class="logo">J . S </span><span class="logo logo2"> Y O U N G</span></a>
+  <a routerLink="/about" id="homeLogo"><span class="logo">J . S </span><span class="logo logo2"> Y O U N G</span></a>
   <!-- Desktop View -->
   <div class="navBtns" id="navbar">
-    <button id="booksBtn" mat-button routerLink="/books" routerLinkActive="active" class="menu-button">Books</button>
     <button id="bioBtn" mat-button routerLink="/about" routerLinkActive="active" class="menu-button">Bio</button>
+    <button id="booksBtn" mat-button routerLink="/books" routerLinkActive="active" class="menu-button">Books</button>
     <button id="exerptBtn" mat-button routerLink="/exerpt" routerLinkActive="active" class="menu-button">Exerpt</button>
     <button id="blogBtn" mat-button routerLink="/blog" routerLinkActive="active" class="menu-button">Blog</button>
     <button id="socialBtn" mat-button routerLink="/social" routerLinkActive="active" class="menu-button">Social</button>
-    <button id="contactBtn" mat-button routerLink="/contact" routerLinkActive="active" class="menu-button">Contact</button>
-    <!-- <button id="homeBtn" mat-button class="menu-button">Projects</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">[matMenuTriggerFor]="belowMenu"
-      <button mat-menu-item routerLink="/" routerLinkActive="active">Dissertation</button>
-      <button mat-menu-item routerLink="/" routerLinkActive="active">Listify</button>
-      <button mat-menu-item routerLink="/" routerLinkActive="active">Virtual Reality</button>
-      <button mat-menu-item routerLink="/" routerLinkActive="active">Serious Games</button>
-    </mat-menu> -->
+    <button id="contactBtn" mat-button routerLink="/contact-me" routerLinkActive="active" class="menu-button">Contact</button>
   </div>
 </mat-toolbar>
