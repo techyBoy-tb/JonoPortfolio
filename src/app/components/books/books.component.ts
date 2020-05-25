@@ -9,6 +9,8 @@ export class BooksComponent implements OnInit {
 
   constructor() { }
 
+  panelOpenState = false;
+
   ngOnInit(): void {
   }
 

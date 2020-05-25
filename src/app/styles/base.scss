@@ -55,22 +55,27 @@ a {
 
 h1 {
     font: 36px $jaldi;
+    margin-bottom: 0px;
 }
 
 h2 {
     font: 32px $jaldi;
+    margin-bottom: 0px;
 }
 
 h3 {
     font: 28px $jaldi;
+    margin-bottom: 0px;
 }
 
 h4 {
     font: 24px $jaldi;
+    margin-bottom: 0px;
 }
 
 h5 {
     font: 18px $jaldi;
+    margin-bottom: 0px;
 }
 
 .noCross::-ms-clear{
@@ -113,6 +118,61 @@ h5 {
     margin: 8px 0 0 0;
 }
 
+/**
+Card layout
+**/
+
+.mat-card {
+    box-shadow: none !important;
+    font-family: $jaldi;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex: auto;
+    width: 250px;
+    height: 300px;
+    border-radius: 4px;
+    margin: 24px 4px 24px 16px;
+}
+
+.card-header {
+    text-align: center;
+    height: 50px;
+    background-color: #47464725;
+    margin: 4px;
+}
+
+.card-text {
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+.card-body {
+    width: fit-content;
+    margin: 24px 16px 24px 16px;
+}
+  
+@media screen and (max-width: 650px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .card {
+        margin: 8px 24px 16px 24px;
+        transition: none;
+    }
+
+    .card-body{
+        height: max-content;
+    }
+}
 
 // html,
 // body {

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SocialComponent } from './social.component';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('SocialComponent', () => {
   let component: SocialComponent;
@@ -8,7 +10,9 @@ describe('SocialComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SocialComponent ]
+      declarations: [ SocialComponent ],
+      imports: [ CustomAngularMaterialModule ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     })
     .compileComponents();
   }));
@@ -19,7 +23,7 @@ describe('SocialComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

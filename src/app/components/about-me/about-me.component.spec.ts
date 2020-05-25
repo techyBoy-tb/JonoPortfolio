@@ -10,7 +10,7 @@ describe('AboutMeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AboutMeComponent ],
-      imports: [CustomAngularMaterialModule ]
+      imports: [ CustomAngularMaterialModule ]
     })
     .compileComponents();
   }));

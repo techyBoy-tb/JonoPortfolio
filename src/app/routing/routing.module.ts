@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ErrorPageComponent } from '../components/error-page/error-page.component';
-import { FormMainComponent } from '../components/form-main/form-main.component';
 import { AboutMeComponent } from '../components/about-me/about-me.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
 import { BlogComponent } from '../components/blog/blog.component';
@@ -14,13 +13,13 @@ export const routes: Routes = [
     path: 'error', component: ErrorPageComponent
   },
   {
-    path: '', component: FormMainComponent
+    path: '', redirectTo: '/about', pathMatch: 'full'
   },
   {
     path: 'about', component: AboutMeComponent
   },
   {
-    path: 'contact', component: ContactMeComponent
+    path: 'contact-me', component: ContactMeComponent
   },
   {
     path: 'blog', component: BlogComponent
@@ -35,7 +34,7 @@ export const routes: Routes = [
     path: 'social', component: SocialComponent
   },
   {
-    path: '**', component: FormMainComponent
+    path: '**', component: AboutMeComponent
   }
 ];
 
