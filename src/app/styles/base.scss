@@ -125,6 +125,7 @@ Card layout
 .mat-card {
     box-shadow: none !important;
     font-family: $jaldi;
+    // overflow: hidden;
 }
 .container {
     display: flex;

@@ -26,6 +26,6 @@ jobs:
     - run: npm install
     - run: npm run lint
     - run: npm run test
-    - run: npm run build --prod --output-hashing=all --base-href=/home/
+    - run: npm run build --prod --output-hashing=all --base-href=/
       env:
         CI: true
