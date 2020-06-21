@@ -10,6 +10,19 @@ img {
     text-align: center;
     width: 400px !important;
 }
+
+.describe {
+    margin: 24px 48px 24px 48px;
+}
+
+.card {
+    flex: auto;
+    height: auto;
+    border-radius: 4px;
+}
+.container {
+    max-width: none;
+}
   
 @media screen and (max-width: 650px) {
     .jono {
