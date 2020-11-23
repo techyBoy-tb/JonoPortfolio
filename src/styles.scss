@@ -3,6 +3,11 @@
 @import "./app/styles/variables.scss";
 @import "./app/styles/base.scss";
 
+main {
+  text-align: center;
+  position: relative;
+}
+
 body {
   font: 16px $jaldi;
 }

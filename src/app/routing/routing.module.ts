@@ -16,22 +16,28 @@ export const routes: Routes = [
     path: '', redirectTo: '/about', pathMatch: 'full'
   },
   {
-    path: 'about', component: AboutMeComponent
+    path: 'about', component: AboutMeComponent,
+    data: { animation: 'One' }
   },
   {
-    path: 'contact-me', component: ContactMeComponent
+    path: 'contact-me', component: ContactMeComponent,
+    data: { animation: 'Two' }
   },
   {
-    path: 'blog', component: BlogComponent
+    path: 'blog', component: BlogComponent,
+    data: { animation: 'Three' }
   },
   {
-    path: 'exerpt', component: ExerptComponent
+    path: 'exerpt', component: ExerptComponent,
+    data: { animation: 'isRight' }
   },
   {
-    path: 'books', component: BooksComponent
+    path: 'books', component: BooksComponent,
+    data: { animation: 'isRight' }
   },
   {
-    path: 'social', component: SocialComponent
+    path: 'social', component: SocialComponent,
+    data: { animation: 'isRight' }
   },
   {
     path: '**', component: AboutMeComponent
