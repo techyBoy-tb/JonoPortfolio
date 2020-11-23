@@ -10,7 +10,8 @@
     "preinstall": "npx npm-force-resolutions",
     "e2e": "ng e2e --no-webdriver-update",
     "test:match": "ng test -- -t",
-    "build-deploy": "ng build --prod --base-href=https://garethclifford.github.io/JonoSite/"
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy --only hosting:jono-young"
   },
   "private": true,
   "dependencies": {
