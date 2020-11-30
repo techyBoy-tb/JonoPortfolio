@@ -175,42 +175,23 @@ Card layout
     }
 }
 
-// html,
-// body {
-//   height: 100%;
-// }
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-// body {
-//   margin: 0;
-//   font-family: 'Nunito', sans-serif;
-// }
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-// /* Scrollbar */
-// /* width */
-// ::-webkit-scrollbar {
-//   // width: 10px;
-//   width: 0px;
-// }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}   
 
-// /* Track */
-// ::-webkit-scrollbar-track {
-//   // background: #F45D0140;
-// }
-
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//   // background: #F45D0180;
-// }
-
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   // background: #F45D01;
-// }
-
-// .container {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: space-evenly;
-//   margin-top: 16px;
-// }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px;
+}

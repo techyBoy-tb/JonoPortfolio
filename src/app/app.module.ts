@@ -1,20 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppComponent } from './app.component';
-import { RoutingModule } from './routing/routing.module';
-import { HeaderComponent } from './components/layout/header/header.component';
-import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { ContactMeComponent } from './components/contact-me/contact-me.component';
-import { BlogComponent } from './components/blog/blog.component';
 import { BooksComponent } from './components/books/books.component';
-import { ExerptComponent } from './components/exerpt/exerpt.component';
-import { SocialComponent } from './components/social/social.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { LeavingDialogComponent } from './components/dialog/leaving-dialog.component';
+import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { InputComponent } from './components/input/input.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
-
+import { HeaderComponent } from './components/layout/header/header.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
+import { SocialComponent } from './components/social/social.component';
+import { UpcomingComponent } from './components/upcoming/upcoming.component';
+import { RoutingModule } from './routing/routing.module';
+import { FormService } from './services/form/form.service';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
 
 @NgModule({
@@ -22,23 +25,32 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
     AppComponent,
     HeaderComponent,
     ErrorPageComponent,
-    BlogComponent,
     AboutMeComponent,
     ContactMeComponent,
     BooksComponent,
-    ExerptComponent,
     SocialComponent,
     FooterComponent,
+    UpcomingComponent,
+    LeavingDialogComponent,
+    ReviewsComponent,
+    InputComponent
   ],
   imports: [
     RoutingModule,
     BrowserModule,
-    RoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    CustomAngularMaterialModule
+    HttpClientModule,
+    CustomAngularMaterialModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  entryComponents: [
+    LeavingDialogComponent
+  ],
+  providers: [
+    FormBuilder,
+    FormService
+  ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
 })

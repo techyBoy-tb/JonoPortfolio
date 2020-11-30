@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.example-header-image {
+    background-image: url('../../../assets/alert-outline.svg');
+    background-size: cover;
+}
+
+h2 {
+    margin-top: 0px
+}
+
+.warning {
+    background-color: $lightred;
+    color: $palegrey;
+}

@@ -4,18 +4,14 @@ img {
     width: 40px;
 }
 
-mat-card {
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
-    overflow: hidden;
-}
+// mat-card {
+//     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+//     overflow: hidden;
+// }
 
 mat-title {
     display: flex;
     justify-content: center;
-}
-
-.elfsight-app-3b457d5b-d768-4f1a-a12e-5a35818a6ab8 {
-    height: 80%;
 }
 
 .twitter-timeline {
@@ -40,84 +36,68 @@ mat-title {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px $palegrey;
 }
-// Skip to content
-// Search or jump to…
 
-// Pull requests
-// Issues
-// Marketplace
-// Explore
- 
- 
-// .container {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: space-evenly;
-// }
+.warning-header {
+    background-image: url('../../../assets/alert-outline.svg');
+    background-size: cover;
+}
 
-// .card {
-//   flex: auto;
-//   max-width: 320px;
-//   height: 350px;
-//   border-radius: 4px;
-//   margin: 24px 4px 24px 4px;
-//   transition: ease-out 0.6s;
-//   box-shadow: 0px 0px 3px 3px $red !important
-// }
 
-// .card-header {
-//   text-align: center;
-//   height: 50px;
-//   background-color: #47464725;
-//   border-radius: 4px;
-//   margin: 4px;
-// }
+.body {
+    padding-top: 32px
+}
 
-// .card-img {
-//   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-//   background-size: cover;
-// }
+.describe {
+    margin: 24px 48px 24px 48px;
+}
 
-// .card-text {
-//   margin-bottom: 24px;
-// }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-// .mat-card-actions {
-//   position: absolute;
-//   bottom: 24px;
-//   right: 24px;
-// }
+.card {
+    flex: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
 
-// .mat-raised-button {
-//   background-color: #F45D01;
-//   color: #eee;
-//   font-weight: 300;
-// }
+@media screen and (max-width: 750px) {
+    .container {
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        transition: all 1s ease-in-out !important;
+        -webkit-transition: all 1s ease-in-out !important;
+    }
+    
+    .card {
+        width: 75%;
+        margin: 8px 24px 16px 24px;
+        transition: all 1s ease-in-out !important;
+        -webkit-transition: all 1s ease-in-out !important;
+    }
 
-// /* ON MOUSEOVER */
-// .card:hover {
-//   max-width: 330px;
-//   height: 355px;
-//   margin: 8px 4px 0px 4px;
-//   box-shadow: 0px 0px 3px 3px #EECD0250 !important;
-// }
+    .card-body{
+        height: max-content;
+    }
+}
 
-// /* i WANT THIS TO APPLY WHEN CARD IS HOVERED, NOT THE BUTTON ITSELF */
-// .mat-card-actions:hover {
-//   transform: scale(1.1);
-// }
-
-// @media (max-width:756px) {
-//   .card {
-//     max-width: max-content;
-//     margin: 8px 24px 16px 24px;
-//     transition: none;
-//   }
+mat-card {
+    box-shadow: 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+    transition: all 1s ease-in-out !important;
+    -webkit-transition: all 1s ease-in-out !important;
+    background: transparent !important;
+    overflow: hidden;
+    height: 65vh;
+  }
   
-//   .card:hover {
-//     max-width: inherit;
-//     max-height: 350px;
-//     margin: 8px 24px 16px 24px;
-//   }
-// }
+  mat-card:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8) !important;
+  }
