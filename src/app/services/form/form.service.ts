@@ -11,13 +11,14 @@ export class FormService {
   constructor(private fb: FormBuilder) { }
   public errorMessages = ERROR_MESSAGES;
 
-  private bookDetails: FormGroup = this.fb.group({
-    urlExtension: ['', [Validators.required, Validators.pattern(FormValidation.MESSAGE_REGEX)]],
-    isbnID: ['', [Validators.required, Validators.pattern(FormValidation.MESSAGE_REGEX)]],
-    bookID: ['', [Validators.required, Validators.pattern(FormValidation.MESSAGE_REGEX)]]
+  private contactDetails: FormGroup = this.fb.group({
+    name: ['', [Validators.required, Validators.pattern(FormValidation.NAME_REGEX)]],
+    subject: ['', [Validators.required, Validators.pattern(FormValidation.ALPHANUMBERIC_HYPEN_REGEX)]],
+    emailAddress: ['', [Validators.required, Validators.pattern(FormValidation.EMAIL_REGEX)]],
+    emailBody: ['', [Validators.required, Validators.pattern(FormValidation.MESSAGE_REGEX)]]
   });
 
-  getBookDetails() {
-    return this.bookDetails;
+  getContactDetails() {
+    return this.contactDetails;
   }
 }

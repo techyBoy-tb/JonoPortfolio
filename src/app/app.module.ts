@@ -15,8 +15,10 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { SocialComponent } from './components/social/social.component';
+import { StatusDialogComponent } from './components/status-dialog/status-dialog.component';
 import { UpcomingComponent } from './components/upcoming/upcoming.component';
 import { RoutingModule } from './routing/routing.module';
+import { ApiService } from './services/api/api.service';
 import { FormService } from './services/form/form.service';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
 
@@ -33,7 +35,8 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
     UpcomingComponent,
     LeavingDialogComponent,
     ReviewsComponent,
-    InputComponent
+    InputComponent,
+    StatusDialogComponent
   ],
   imports: [
     RoutingModule,
@@ -45,11 +48,13 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
     ReactiveFormsModule
   ],
   entryComponents: [
-    LeavingDialogComponent
+    LeavingDialogComponent,
+    StatusDialogComponent
   ],
   providers: [
     FormBuilder,
-    FormService
+    FormService,
+    ApiService,
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]

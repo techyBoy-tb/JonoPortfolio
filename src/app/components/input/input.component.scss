@@ -12,7 +12,7 @@ input, textarea {
   background: transparent;
   padding: 0 12px;
   width: 100%;
-  border: 1px solid #9bc3d3;
+  border: 1px solid #999999;
   font: 13px $jaldi;
   color: black;
   line-height: 40px;
@@ -24,7 +24,7 @@ input {
 
 input:focus, textarea:focus {
   outline: none;
-  border: 1px solid #4285f4;
+  border: 1px solid #666666;
 }
   
 label {
@@ -46,7 +46,7 @@ textarea:focus ~ label,
 textarea:valid ~ label {
   top: -25px;
   font-size: 14px;
-  color: #4285f4;
+  color: #666666;
 }
 
 
@@ -59,7 +59,7 @@ textarea:valid ~ label {
     background-color: transparent !important;
     margin-bottom: -16px;
     &:focus {
-      border-color: #4285f4;
+      border-color: #666666;
     }
 
     & .errorDirective_error,

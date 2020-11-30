@@ -39,3 +39,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# API config
+src/assets/config.json
