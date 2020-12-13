@@ -73,7 +73,8 @@ export class ContactMeComponent implements AfterViewInit {
       from: this.contactDetails.controls['emailAddress'].value,
       name: this.contactDetails.get('name').value,
       subject: this.contactDetails.get('subject').value,
-      text: this.contactDetails.get('emailBody').value
+      text: this.contactDetails.get('emailBody').value,
+      to: 'jsyoungbooks@gmail.com'
     };
     return messageBody;
   }

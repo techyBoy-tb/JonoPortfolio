@@ -16,7 +16,7 @@ export class SocialComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.openDialog();
+    // this.openDialog();
   }
 
   initTwitterWidget() {

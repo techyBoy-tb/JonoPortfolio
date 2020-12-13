@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "jono-young",
+    "site": "js-young",
     "public": "docs",
     "ignore": [
       "firebase.json",

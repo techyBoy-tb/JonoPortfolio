@@ -11,7 +11,7 @@
     "e2e": "ng e2e --no-webdriver-update",
     "test:match": "ng test -- -t",
     "predeploy": "npm run build",
-    "deploy": "firebase deploy --only hosting:jono-young"
+    "deploy": "firebase deploy --only hosting:js-young"
   },
   "private": true,
   "dependencies": {
