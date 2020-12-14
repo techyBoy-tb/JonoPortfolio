@@ -23,8 +23,8 @@ describe('InputComponent', () => {
       fixture = TestBed.createComponent(InputComponent);
       component = fixture.componentInstance;
       formBuilder = TestBed.inject(FormBuilder);
-      component.control = formBuilder.control('')
-      component.control.setParent(formBuilder.group({ unspecified: component.control }))
+      component.control = formBuilder.control('');
+      component.control.setParent(formBuilder.group({ unspecified: component.control }));
       fixture.detectChanges();
     });
   }));
