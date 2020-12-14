@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
 import { UpcomingComponent } from './upcoming.component';
+
 
 describe('UpcomingComponent', () => {
   let component: UpcomingComponent;
@@ -8,9 +9,10 @@ describe('UpcomingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UpcomingComponent ]
+      declarations: [UpcomingComponent],
+      imports: [CustomAngularMaterialModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('UpcomingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

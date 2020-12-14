@@ -22,7 +22,7 @@ export class ApiService {
 
 
   public submitEmail(body: Object): Observable<any> {
-    return this.newPostRequest('api.email.endpoint', body, this.requestOptions)
+    return this.newPostRequest('api.email.endpoint', body, this.requestOptions);
   }
 
   newPostRequest(pathUrl: string, body: Object, httpOptions?: Object, createEndpoint: boolean = true): Observable<any> {

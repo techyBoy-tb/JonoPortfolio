@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
 import { ReviewsComponent } from './reviews.component';
+
 
 describe('ReviewsComponent', () => {
   let component: ReviewsComponent;
@@ -8,9 +9,10 @@ describe('ReviewsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReviewsComponent ]
+      declarations: [ReviewsComponent],
+      imports: [CustomAngularMaterialModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +21,7 @@ describe('ReviewsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });
